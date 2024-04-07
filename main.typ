@@ -1,4 +1,6 @@
 #import "libs/template.typ": *
+
+//以下のテンプレートおよびその変数は自作です．template.typを見て，うまくカスタマイズしてください．
 #show: project.with(
   title: [Typst Template#footnote[This template assumes version 0.11.0]],
   authors: (
@@ -10,10 +12,10 @@
   abstract: [Typstの機能の個人的なメモです。数ある機能のうちのほんの少しを紹介しています。Typst 0.11.0を前提にしています。],
   //フォントサイズの設定
   font-size: 12pt,
-  //フォントの設定, 以下はデフォルトです．
-  body-font: ("STIX Two Text","Harano Aji Mincho"),
-  sans-font: ("STIX Two Text","Harano Aji Gothic"),
-  math-font: ("STIX Two Math","Harano Aji Mincho"),
+  //フォントの設定, 以下はデフォルトです．フォントがない場合は適当なフォントで代替されます．使用できるフォントはコマンドラインで typst fonts で調べることができます．
+  body-font: ("Times","Hiragino Mincho Pro"), //地の文のフォント
+  sans-font: ("Times","Hiragino Kaku Gothic Pro"), //強調やheadingに使うフォント
+  math-font: ("STIX Two Math","Hiragino Mincho Pro"), //数式フォント
   //行間の設定
   leading: 1.2em,
   //マージンの設定
